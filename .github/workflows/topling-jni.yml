@@ -32,6 +32,7 @@ jobs:
     # refer https://github.com/actions/runner-images to get the details
     # Prebuilt trial objects use GCC 13 LTO bytecode.
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     env:
       CC: gcc-13
       CXX: g++-13
